@@ -1,3 +1,8 @@
 #signupTitle{
-  color: yellow
+  color: yellow;
+  background-color: red;
+  height: 90vh;
+  background-image: url('../../assets/images/cadastrar.png');
+  /* background-attachment: fixed; */
+  background-size: cover;
 }

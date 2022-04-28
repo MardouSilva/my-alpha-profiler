@@ -1,5 +1,7 @@
 import "./styles.css"
 
 export const SignUp = () => {
-  return <h1 id="signupTitle">SignUp</h1>;
+  return (
+    <div id="signupTitle">SignUp</div>
+  )  
 };
