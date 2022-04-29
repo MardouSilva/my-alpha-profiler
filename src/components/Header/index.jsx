@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './styles.css';
 import { Link } from 'react-router-dom';
 
@@ -15,21 +14,21 @@ const Header = () => {
     return(
         <header>
             <nav>
-                <button id='perfil'  onClick={ (e) => {
+                <Link to='/editprofile'><button id='perfil'  onClick={ (e) => {
                     trocarBackground('perfil')
-                }}> <Link to='/editprofile'>Perfil</Link></button>
+                }}> Perfil</button></Link>
 
-                <button id='cadastrar' onClick={ (e) => {
-                    trocarBackground('cadastrar');
-                }}> <Link to='/signup'>Cadastrar</Link> </button>
-
-                <button id='logar' onClick={ (e) => {
+                <Link to='/signin'><button id='logar' onClick={ (e) => {
                     trocarBackground('logar'); 
-                }}> <Link to='/signin'>Logar</Link> </button>
+                }}> Logar </button></Link>
 
-                <button id='home' onClick={ (e) => {
+                <Link to='/signup'><button id='cadastrar' onClick={ (e) => {
+                    trocarBackground('cadastrar');
+                }}> Cadastrar </button></Link>
+
+                <Link to='/home'><button id='home' onClick={ (e) => {
                     trocarBackground('home');
-                }}> <Link to='/home'>Home</Link> </button>
+                }}> Home </button></Link>
             </nav>
         </header>
     )
