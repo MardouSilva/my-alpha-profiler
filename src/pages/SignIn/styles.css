@@ -1,8 +1,47 @@
-#signinTitle{
-  color: green;
-  background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+
+#signinScreen{
   height: 90vh;
   background-image: url('../../assets/images/login.png');
-  /* background-attachment: fixed; */
   background-size: cover;
+}
+
+#signinContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 200px;
+  left: 60px; 
+  width: 500px;
+  align-items: center;
+}
+
+#signinButtonColored {
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50px;
+  color: rgb(247, 247, 247, 0.9);
+  background: linear-gradient(90deg, #2A60E5 4.98%, #7955EE 100%);
+}
+
+input{
+  width: 400px;
+  height: 80px;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Solway', serif;
+  font-size: 30px;
+  color:rgb(247, 247, 247, 0.9);
+  background: transparent;
+  border-radius: 50px;
+  border: rgb(121, 85, 238, 0.7) solid 2px;
+}
+
+h1{
+  margin-bottom: 30px;
+  color: rgb(247, 247, 247, 0.9);
+  font-family: 'Solway', serif;
+  font-size: 40px;
 }
