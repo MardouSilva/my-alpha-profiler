@@ -1,8 +1,56 @@
-#signupTitle{
-  color: yellow;
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Solway&display=swap");
+
+#signupScreen {
   height: 90vh;
-  background-image: url('../../assets/images/cadastrar.png');
-  /* background-attachment: fixed; */
+  background-image: url("../../assets/images/login.png");
   background-size: cover;
+}
+
+#signupContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  width: 500px;
+  align-items: center;
+}
+
+#signupButtonColored {
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50px;
+  color: rgb(247, 247, 247, 0.9);
+  background: linear-gradient(90deg, #2a60e5 4.98%, #7955ee 100%);
+}
+
+input {
+  width: 400px;
+  height: 80px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Solway", serif;
+  font-size: 30px;
+  color: rgb(247, 247, 247, 0.9);
+  background: transparent;
+  border-radius: 50px;
+  border: rgb(121, 85, 238, 0.7) solid 2px;
+}
+
+input[type="date"] {
+  background: transparent;
+  color: rgb(247, 247, 247, 0.9);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: rgb(247, 247, 247, 0.9);
+  font-family: "Solway", serif;
+  font-size: 40px;
 }
