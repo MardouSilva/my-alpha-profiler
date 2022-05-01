@@ -1,5 +1,7 @@
 import "./styles.css"
 
 export const Home = () => {
-  return <h1 id="homeTitle">Home</h1>;
+  return <div id="homeScreen">
+    
+  </div>;
 };

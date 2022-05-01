@@ -2,7 +2,7 @@
 
 #signupScreen {
   height: 90vh;
-  background-image: url("../../assets/images/login.png");
+  background-image: url("../../assets/images/cadastrar.png");
   background-size: cover;
 }
 
@@ -40,12 +40,12 @@ input {
 }
 
 input[type="date"] {
-  background: transparent;
-  color: rgb(247, 247, 247, 0.9);
+  appearance: none;
+  color: rgb(247, 247, 247, 0.5);
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(100%);
+  filter: invert(50%);
 }
 
 h1 {
