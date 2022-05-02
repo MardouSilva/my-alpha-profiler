@@ -16,7 +16,7 @@ const Header = () => {
             <nav>
                 <Link to='/editprofile'><button id='perfil'  onClick={ (e) => {
                     trocarBackground('perfil')
-                }}> Perfil</button></Link>
+                }}> Editar Perfil </button></Link>
 
                 <Link to='/signin'><button id='logar' onClick={ (e) => {
                     trocarBackground('logar'); 

@@ -11,7 +11,6 @@
   height: 90%;
   position: absolute;
   right: 10px;
-  
 }
 
 #blueCardsContainer {
@@ -43,7 +42,7 @@
   position: absolute;
   top: 435px;
   left: 300px;
-  border: #315EE5 2px solid;
+  
 }
 
 .violetCards{
@@ -60,8 +59,31 @@
   top: 15px;
   left: 20px;
   font-family: "Solway", serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+.blueCardTextContent{
+  width: 190px;
+  height: 80px;
+  position: relative;
+  top: 40px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Solway", serif;
+  font-size: 40px;
+}
+
+.violetCardTextContent{
+  width: 350px;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  left: 10px;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Solway", serif;
+  font-size: 25px;
 }
 
 .imageUser {
