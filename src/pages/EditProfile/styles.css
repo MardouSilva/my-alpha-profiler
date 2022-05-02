@@ -1,3 +1,36 @@
-#profileTitle{
-  color: blue
+#profileTitle {
+  height: 90vh;
+  background-image: url("../../assets/images/editeprofile.png");
+  background-size: cover;
+}
+
+#profileTitle-internal {
+  width: 30vw;
+  height: 90vh;
+  /* border: 2px solid red; */
+  position: absolute;
+  left: 58vw;
+  text-align: center;
+}
+
+#photo-edite {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+.input-edite{
+  background-color: #7755ED;
+  height: 70px;
+}
+
+#editProfileButtonColored{
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50px;
+  color: rgb(247, 247, 247, 0.9);
+  background: linear-gradient(90deg, #2A60E5 4.98%, #7955EE 100%);
 }
