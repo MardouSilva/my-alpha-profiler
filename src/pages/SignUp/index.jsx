@@ -2,14 +2,14 @@ import "./styles.css";
 
 export const SignUp = () => {
   async function signUp() {
-    const user = document.getElementById("user_input").value;
+    const username = document.getElementById("user_input").value;
     const password = document.getElementById("password_input").value;
-    const birthday = document.getElementById("birthday_input").value;
+    const birth_date = document.getElementById("birthday_input").value;
     const email = document.getElementById("email_input").value;
 
-    const message = JSON.stringify({ user, password, birthday, email });
+    const message = JSON.stringify({ username, password, birth_date, email });
 
-    const response = await fetch("http://localhost:2000/user_insert", {
+    const response = await fetch("http://localhost:3333/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: message,
