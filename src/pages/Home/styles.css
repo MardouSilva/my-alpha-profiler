@@ -28,7 +28,7 @@
 .blueCards {
   width: 200px;
   height: 170px;
-  background-color: #315EE5;
+  background-color: #315ee5;
   border-radius: 40px;
   margin: 10px;
   align-items: center;
@@ -42,15 +42,14 @@
   position: absolute;
   top: 435px;
   left: 300px;
-  
 }
 
-.violetCards{
+.violetCards {
   width: 370px;
   height: 90px;
   margin: 10px;
   border-radius: 20px;
-  background-color: #7755ED;
+  background-color: #7755ed;
   color: rgb(247, 247, 247, 0.8);
 }
 
@@ -63,7 +62,7 @@
   font-weight: 600;
 }
 
-.blueCardTextContent{
+.blueCardTextContent {
   width: 190px;
   height: 80px;
   position: relative;
@@ -74,7 +73,7 @@
   font-size: 40px;
 }
 
-.violetCardTextContent{
+.violetCardTextContent {
   width: 350px;
   height: 40px;
   position: relative;
@@ -94,4 +93,14 @@
   top: 50px;
   left: 340px;
   border-radius: 40px;
+}
+
+#view_button {
+  width: 250px;
+  height: 60px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-radius: 50px;
+  color: rgb(247, 247, 247, 0.9);
+  background: linear-gradient(90deg, #2a60e5 4.98%, #7955ee 100%);
 }
