@@ -2,12 +2,12 @@ import "./styles.css";
 
 export const SignIn = () => {
   async function signIn() {
-    const user = document.getElementById("user_input_signin").value;
+    const username = document.getElementById("user_input_signin").value;
     const password = document.getElementById("password_input_signin").value;
 
-    const message = JSON.stringify({ user, password });
+    const message = JSON.stringify({ username, password });
 
-    const response = await fetch("http://localhost:2000/user_validate", {
+    const response = await fetch("http://localhost:3333/auth", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: message,
