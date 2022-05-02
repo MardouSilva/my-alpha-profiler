@@ -14,7 +14,7 @@ export const SignIn = () => {
     });
 
     const responseJson = await response.json();
-    console.log(responseJson);
+    document.cookie = `session=${responseJson.token};`;
   }
 
   return (
