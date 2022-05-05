@@ -1,7 +1,8 @@
+import { useEffect, useState } from "react";
 import "./styles.css";
 
 export const Home = () => {
-  let userInfo = {};
+  const [userInfo, setUserInfo] = useState({});
 
   async function getUserInfo() {
     const token = document.cookie.split("=")[1];
@@ -12,9 +13,19 @@ export const Home = () => {
 
     const responseJson = await response.json();
     console.log(responseJson);
-    userInfo.username = responseJson.username;
+    setUserInfo(responseJson);
     console.log(userInfo);
   }
+  
+  const getAge = () => {
+    const now = new Date(); // Data de hoje
+    const past = new Date(userInfo.birth_date); // Outra data no passado
+    const diff = Math.abs(now.getTime() - past.getTime()); // Subtrai uma data pela outra
+    return Math.ceil(diff / (1000 * 60 * 60 * 24 * 30 * 12));
+  }
+  useEffect(()=>{
+    getUserInfo();
+  })
 
   return (
     <section id="homeScreen">
@@ -25,25 +36,18 @@ export const Home = () => {
             <p class="blueCardTextContent">{userInfo.username}</p>
           </div>
           <div class="blueCards">
-            <p class="cardTitle">Sobrenome</p>
-            <p class="blueCardTextContent">Santos</p>
-          </div>
-          <div class="blueCards">
             <p class="cardTitle">Idade</p>
-            <p class="blueCardTextContent">21 anos</p>
+            <p class="blueCardTextContent">{getAge()}</p>
           </div>
-          <button id="view_button" onClick={getUserInfo}>
-            Mostrar
-          </button>
         </div>
         <div id="violetCardsContainer">
           <div class="violetCards">
             <p class="cardTitle">Nascimento</p>
-            <p class="violetCardTextContent">23/02/2001</p>
+            <p class="violetCardTextContent">{userInfo.birth_date}</p>
           </div>
           <div class="violetCards">
             <p class="cardTitle">Email</p>
-            <p class="violetCardTextContent">tiagooogomes@gmail.com</p>
+            <p class="violetCardTextContent">{userInfo.email}</p>
           </div>
         </div>
         <img class="imageUser" src="https://i.pinimg.com/564x/8b/da/ca/8bdaca81d5ddbaeb92b61d6b5787d866.jpg" alt="UserPerfil"></img>

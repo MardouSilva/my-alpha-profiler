@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.css";
 
 export const SignUp = () => {
@@ -27,9 +28,11 @@ export const SignUp = () => {
         <input id="password_input" type="password" placeholder="Senha" />
         <input id="email_input" type="email" placeholder="E-mail" />
         <input id="birthday_input" type="date" placeholder="Data de Nascimento" />
-        <button id="signupButtonColored" onClick={signUp}>
-          Cadastrar
-        </button>
+        <Link to="/home">
+          <button id="signupButtonColored" onClick={signUp}>
+            Cadastrar
+          </button>
+        </Link>
       </div>
     </section>
   );
